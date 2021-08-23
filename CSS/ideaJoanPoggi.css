@@ -1,0 +1,1143 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: tattoo;
+    src:url(../Fuentes/tattoo.otf);
+}
+
+@font-face {
+    font-family: tattoo2;
+    src:url(../fuentes/tattoo2.otf) ;
+  }
+
+hr {
+    color: white;
+    border: 1px white solid;
+    opacity: inherit;
+}
+
+.redesContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0);
+    padding-left: 20px;
+    padding-top: 0px;
+    padding-bottom: 5px;
+    padding-right: 20px;
+    margin-top: 10px;
+    height: 70px;
+    
+}
+
+
+.redesContainer ul li{
+    display: inline-block;
+    margin: 0 5px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    
+}
+
+.redesContainer ul li a{
+    display: block;
+    padding-top: 0px;
+    padding-bottom: 3px;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    line-height: 50px;
+    font-size: 18px;
+    transition: .2s;
+    border-radius: 5%;
+    box-shadow: 0 1px 0px 0px rgba(255, 255, 255, 0.363);
+}
+
+.redesContainer ul:hover a{
+    filter:blur(2px);
+}
+
+.redesContainer ul li a:hover{
+    transform: translate(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.397);
+    filter: none;
+    color: white;
+    border-radius: 5%;
+    
+    
+}
+
+.redesContainer ul li .instagram:hover{
+    background-color: #e4405f;
+
+}
+
+.redesContainer ul li .youtube:hover{
+    background-color: #bb0000
+}
+
+.redesContainer ul li .facebook:hover{
+    background-color: #3b5998
+}
+
+.redesContainer ul li .pinterest:hover{
+    background-color: #cb2027
+}
+
+.redesContainer ul li .whatsapp:hover{
+    background-color: #4dc247;
+}
+
+.redesContainer .container-fluid img {float: left;}
+
+.redesContainer .container-fluid form {
+    float: right;
+    width: calc(100% - 40px);
+    display: none;
+}
+
+body {
+        background-image: url(../Multimedia/bannerTrabajos.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        transition: all ;
+        
+}
+
+.logoIndex {
+    display: grid;
+    padding: 0px;
+    margin: 0px;
+    margin-left: -10px;
+    width: 70px;
+    height: 70px;
+   overflow: hidden;
+    box-shadow: none;
+    
+}
+
+.logoIndex ul{
+    width: 70px;
+    height: 70px;
+    animation: cambiar 7s infinite ;
+}
+
+
+
+.logoIndex li a:hover{
+    transform: none !important;
+}
+
+@keyframes cambiar {
+    0% { margin-top: 0px;}
+    10% { margin-top: 0px;}
+    20% { margin-top: 0px;}
+    50%{margin-top: -70px;}
+    60%{ margin-top: -70px;}
+    70%{ margin-top: -70px;}
+    
+    100%{ margin-top: 0px;}
+}
+
+.logoIndex a{
+    box-shadow: none !important;
+    
+}
+.logoIndex .maquina {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    
+}
+
+.logoIndex .joan{
+    display: flex;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    
+}
+
+.titleIndex {
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    line-height: 2;
+
+}
+
+.joanmsiTitle{
+    display: block;
+    font-size: 2rem;
+    font-weight: 800;
+    font-weight: bold;
+    color: white;
+}
+
+.tattooinkFont {
+    font-size: 6rem;
+    font-weight: 100;
+    line-height: 4rem;
+    font-family: tattoo;
+    background: linear-gradient(#b47dcd, #e878a2, #eb85ab);
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: 3s;
+}
+
+.tattooinkFont:hover {
+    background: linear-gradient( #e878a2, #eb85ab,#b47dcd);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+.bannerInicio{
+    margin: 1em;
+    background-color: #000000c5;
+    box-shadow: 0 5px 5px 0px rgb(0, 0, 0);
+    padding-bottom: 50px ;
+}
+.bannerInicio h1{
+    padding-top: 90px;
+    text-align: center;
+    padding-bottom: 30px;
+    background: linear-gradient( #b47dcd,#b47dcd, #e878a2, #eb85ad);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: tattoo;
+    font-size: 4rem;
+    
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:auto auto ;
+    gap: 1em;
+    grid-template-areas: 
+    "element1 element1"
+    "element2 element2"
+     ;
+}
+
+.element1{
+    grid-area: element1;
+}
+ .element2 {
+    grid-area: element2;
+ }
+
+.element3 {
+    grid-area: element3;
+    width: 150%;
+    height: auto;
+    margin-left: 9em;
+   
+    
+}
+
+.element4 {
+    grid-area: element4;
+    justify-content: center;
+    font-weight: bold;
+    
+}
+
+.element5 {
+    grid-area: element5;
+    font-weight: bold;
+}
+
+.element6 {
+    grid-area: element6;
+    background-color: rgba(255, 255, 255, 0);
+    padding-left: 25% ;
+    margin-bottom: 20px;
+    margin-right: 1em;
+}
+
+ .bannerInicio img{
+     width: 60%;
+     height: auto;
+     
+ }
+
+.textoImg {
+    display: flex;
+    font-weight: bold;
+    
+}
+
+.bannerInicio p{
+    color: transparent;
+    font-size: 20px;
+    text-align: center;
+    padding-left: 7em;
+    padding-right: 7em;
+    line-height: 30px; 
+    padding-bottom: 50px;
+    background: linear-gradient( #b47dcd, #e878a2, #eb85ab,#b47dcd);
+    -webkit-background-clip: text;
+    
+    
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    line-height: 30px; 
+    font-family: tattoo;
+    border: 1px solid rgba(255, 255, 255, 0);
+    text-decoration: none;
+    transition: 0.2s;
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.562);
+    background-color: #000000c5;
+    margin-bottom: 50px;
+}
+#contact:hover {
+    
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    line-height: 30px; 
+    font-family: tattoo;
+    border: 1px solid linear-gradient(to right, #b47dcd, #e878a2, #eb85ab);
+    text-decoration: none;
+    box-shadow: 0 5px 5px 0px rgb(0, 0, 0);
+    transform: scale(1.05);
+}
+.nosotros {
+    display: block;
+   background-color: #000000c5;
+    margin: 1em;
+    box-shadow: 0 5px 5px 0px rgb(0, 0, 0);
+    
+}
+
+.nosotros h1{
+    color: rgb(255, 255, 255);
+    font-family: tattoo2;
+    font-size: 100px;
+    padding-top: 90px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+
+.nosotros p{
+    color: #f6e1c5;
+    font-size: 20px;
+    text-align: center;
+    padding-left: 15em;
+    padding-right: 15em;
+    line-height: 30px; 
+    padding-bottom: 50px;
+}
+
+
+.copy p{
+    display: inline;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    color: rgb(150, 150, 150);
+    font-size: 10px;
+    
+}
+
+
+
+
+.copy{
+    color: #b8b8b8;
+    text-align: center;
+    font-size: 11px;
+    background-color: rgba(0, 0, 0, 0.918);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 1px;
+    margin-bottom: 0px;
+    
+}
+
+.borderCopy{
+    padding-bottom: 1em;
+}
+
+.argentina {
+    color: white;
+    margin: 0 8px;
+    font-size: 10px;
+}
+
+.contacto{
+    color: rgb(255, 255, 255);
+    font-family: tattoo2;
+    font-size: 100px;
+    padding-top: 90px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+
+
+.contacto h1{
+    text-align: center;
+    background: linear-gradient( #b47dcd, #e878a2, #eb85ad);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: tattoo;
+    font-size: 4rem;
+}
+
+.contacto div p{
+     padding-top: 5px;
+}
+
+.contacto form div{
+    color: white;
+    align-content: center;
+    padding-top: 20px;
+}
+.contacto form p{
+    color: white;
+    background-color: rgb(58, 54, 54);
+    align-items: center;
+}
+
+.contacto div div label{
+    padding-top: 5px;
+}
+
+
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000c5;
+    margin-bottom: 3px;
+   padding-bottom: 0px;
+   padding-top: 0px;
+   margin-top: 2px;
+   box-shadow: 0 3px 15px 0px rgba(0, 0, 0, 2);
+}
+
+.menu ul li{
+    display: block;
+    margin: 0 0px;
+    width: 130px;
+    height: 50 px;
+    text-align: center;
+    z-index: 2;
+
+}
+
+.indexBoton{
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 4);
+    filter: none;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 3%;
+}
+
+.nosotrosBoton{
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 4);
+    filter: none;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 3%;
+}
+
+.diseñosBoton{
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 4);
+    filter: none;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 3%;
+}
+
+.contactoBoton{
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 4);
+    filter: none;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 3%;
+}
+
+.trabajosBoton{
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 4);
+    filter: none;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 3%;
+}
+
+.staffBoton{
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 4);
+    filter: none;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 3%;
+}
+
+.menu ul li a{
+    display: block;
+    padding: 20px 0px;
+    background-color:#00000000;
+    color: rgb(255, 255, 255);
+    line-height: 50px;
+    font-size: 20px;
+    transition: .2s;
+    text-decoration: none;
+    font-family: tattoo;
+}
+
+
+
+
+.menu ul li a:hover{
+    transform: translate(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 4);
+    filter: none;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 3%;
+}
+
+.menu  li ul {
+    display: none;
+}
+
+.menu  li:hover > ul {
+    display: block;
+}
+.menu ul li ul a{
+    display: block;
+    padding: 0 0px;
+    background-color:rgba(0, 0, 0, 0.815);
+    color: rgb(255, 255, 255);
+    line-height: 50px;
+    font-size: 18px;
+    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 2);
+    transition: .2s;
+    text-decoration: none;
+    margin-left: -292px;
+    padding-left: 278px;
+    padding-right: 370px;
+    border: 1px solid #f6e1c51a;
+}
+
+
+
+a {
+    text-decoration: none;
+    background: linear-gradient(to right, #b47dcd, #e878a2, #eb85ab);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+a:hover, a:focus {
+    background-size: 100% 2px;
+}
+
+
+
+.copy p:hover, a:focus {
+    background-size: 100% 2px;
+}
+
+
+.nav > li {
+  float:left;
+} 
+
+.nav li a {
+    background-color:#000;
+    color:#fff;
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+  }
+  
+  .nav li a:hover {
+    transform: translate(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 4);
+    filter: none;
+    background-color: white;
+    color: black;
+  }
+  
+  .nav li ul {
+    display: none;
+    position: absolute;
+    min-width:140px;
+    margin-left: 0px;
+  }
+  
+  .nav li:hover > ul {
+    display:block;
+  }
+  
+  .nav li ul li {
+    position:relative;
+  }
+  
+  .nav ul li a:hover {
+    transform: translate(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 4);
+    filter: none;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+  }
+  
+  .nav li ul {
+    display: none;
+  }
+  
+  .nav li:hover > ul {
+    display: block;
+  }
+  .nav ul li ul a {
+    display: block;
+    padding: 0 0px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    line-height: 50px;
+    font-size: 18px;
+    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 2);
+    transition: 0.2s;
+    text-decoration: none;
+  }
+
+.trabajoVideos h1{
+   
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    background: linear-gradient( #b47dcd,#b47dcd, #e878a2, #eb85ad);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: tattoo;
+    font-size: 4rem;
+}
+
+.trabajoVideos {
+    background-color: #000000c5;
+    margin: 1em;
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 4);
+}
+
+.menuDiseños {
+    background-image: url(../Multimedia/bannerDiseños.jpg);
+    text-align: center;
+    text-decoration: none;
+    background-size: cover;
+}
+
+.menuDiseños h1{
+    font-family: tattoo;
+    padding-top: 90px;
+    padding-bottom: 30px;
+    color: white;
+    font-family: tattoo;
+    font-size: 4rem;
+    
+}
+
+.menuDiseños{
+    
+    background-color: #000000c5;
+    padding-bottom: 160px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 1em;
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 4);
+}
+.menuDiseños ul li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 5%;
+    font-family: tattoo;
+    background-color: #000000c5;
+    color: black;
+    transition: 0.3s;
+}
+
+.menuDiseños ul li:hover {
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color:black;
+    color: white;
+    transform: scale(1.2);
+}
+
+.menuDiseños ul li a{
+    text-decoration: none;
+    color: white;
+    
+}
+.menuDiseños ul li:hover a{
+    text-decoration: none;
+    color: white;
+    background:none;
+    
+}
+
+.fondoArtistas {
+    background-color: #000000c5;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 1em;
+}
+
+.fondoArtistas h2{
+    
+    background: linear-gradient( #b47dcd, #e878a2, #eb85ad);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: tattoo;
+    font-size: 4rem;
+    
+}
+
+h2{
+    color: white;
+    font-family: tattoo;
+    font-size: 50px;
+}
+
+
+
+.imgAcuarela h2{
+    background-image: linear-gradient(to right,black, pink, cyan, rgb(117, 255, 117), violet, black);
+}
+
+.grids1{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 33% 33% 33% ;
+    padding-top: 0px;
+    padding-bottom: 5px ;
+    margin: 100px;
+    gap: 5px;
+    background-color: rgba(255, 192, 203, 0)
+}
+
+.grids1 img{
+    border: 5px solid #000000c5;
+    max-width: 100%;
+    height: auto;
+    transition: 0.8s;
+}
+
+.grids1 img:hover{
+        -webkit-transform:scale(1.1);
+        -moz-transform:scale(1.1);
+        -ms-transform:scale(1.1);
+        -o-transform:scale(1.1);
+        transform:scale(1.1);
+}
+
+
+.fondoDiseñosFotos h2 {
+    font-family: tattoo;
+    font-size: 4rem;
+    background-color: #000000c5;
+}
+
+.carousel-item {
+    padding-left: 25%;
+    padding-bottom: 10%;
+   
+}
+
+.info h1 {
+    font-family: tattoo;
+    font-size: 40px;
+}
+
+.info {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.5);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#50000000,endColorstr=#50000000);
+    width: 300px;
+    color: #FFF;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    transition: 3s;
+    margin-left: 15%;
+    margin-bottom: 20px;
+    
+    
+   }
+   .li {
+     text-align: center;
+    position: relative;
+    float: center;
+    overflow: hidden;
+    transition: 3s;
+    }
+
+.li:hover .info {
+    display: block;
+    }
+
+.formulario{
+    background-color: #000000c5;
+    margin: 1em;
+}
+
+@media (max-width: 480px){
+    .tattooinkFont {
+        font-size: 6rem;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-weight: 100;
+        line-height: 4rem;
+        font-family: tattoo;
+        background: linear-gradient(#b47dcd, #e878a2, #eb85ab);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+    .menuContainer {
+        height: 0px;
+        overflow: hidden;
+        transition: all 0.3s ease;
+    }
+    .menuContainer.open {
+        height: 552px;
+    }
+    body {
+        background-color: black;
+    }
+
+    .titleIndex {
+        text-align: center;
+        margin-top: 9rem;
+        margin-bottom: 5rem;
+        line-height: 2;
+    
+    }
+    .grids1{
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 100%;
+        padding-top: 0px;
+        padding-bottom: 5px ;
+        margin: 1em;
+    }
+    .redesContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0);
+        padding-left: 20px;
+        padding-top: 0px;
+        padding-bottom: 5px;
+        padding-right: 20px;
+        flex-direction: column;
+        margin-top: 10px;
+        border-bottom: 1px solid white;
+        
+    }
+
+    .bannerInicio{
+        padding-bottom: 0%;
+    }
+
+    .bannerInicio p{
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        padding-left: 1em;
+        padding-right: 1em;
+        line-height: 30px; 
+        padding-bottom: 50px;
+        
+    }
+    .redesContainer .container-fluid img {float: left;}
+
+    .redesContainer .container-fluid form {
+        float: right;
+        width: calc(100% - 40px);
+        
+    }
+    .menu {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        background-color: #000000c5;
+        margin-bottom: 3px;
+       padding-bottom: 0px;
+       padding-top: 0px;
+       margin-top: 2px;
+       box-shadow: 0 3px 15px 0px rgba(0, 0, 0, 2);
+    }
+    .menu ul li{
+        display: block;
+        margin: 0 0px;
+        width: 100%;
+        height: 50 px;
+        text-align: center;
+    
+    }
+    .menu li:hover > ul {
+        display: none !important;
+    }
+    .menu ul li a{
+        display: block;
+        padding: 20px 0px;
+        background-color:#00000000;
+        color: rgb(255, 255, 255);
+        line-height: 50px;
+        font-size: 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.753);
+        border-top: 1px solid rgba(255, 255, 255, 0.753);
+        transition: .2s;
+        text-decoration: none;
+        font-family: tattoo;
+    }
+    .redesContainer ul li a{
+        display: block;
+        padding-top: 0px;
+        padding-bottom: 3px;
+        background-color: rgba(255, 255, 255, 0);
+        color: white;
+        line-height: 50px;
+        font-size: 18px;
+        transition: .2s;
+        border-radius: 5%;
+        box-shadow:none;
+    }
+    
+    .copy p{
+        display: inline;
+        padding-top: 0px;
+        padding-bottom: 20px;
+        color: rgb(150, 150, 150);
+        font-size: 14px;
+        
+    }
+    .argentina {
+        color: white;
+        margin: 0 8px;
+        font-size: 14px;
+    }
+
+    .redesContainer ul{
+        margin-right: 1em;
+        margin-bottom: 3em;
+        margin-top: 6em;
+    }
+    .menuDiseños ul li {
+       width: 90%;
+    }
+    .menuDiseños{
+    
+        background-color: #000000c5;
+        padding-bottom: 2em;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 1em;
+        box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 4);
+    }
+    .menuDiseños {
+        background-image:none;
+        text-align: center;
+        text-decoration: none;
+        background-size: cover;
+    }
+    .carousel-item {
+        padding-left: 0%;
+        padding-bottom: 10%;
+    }
+    iframe{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .logoIndex {
+        display: grid;
+        padding: 0px;
+        margin: 0px;
+        margin-left: -10px;
+        width: 70px;
+        height: 70px;
+       overflow: hidden;
+        box-shadow: none;
+        
+    }
+    
+    .logoIndex ul{
+        width: 70px;
+        height: 70px;
+        animation: cambiar 7s infinite ;
+    }
+    
+    
+    
+    .logoIndex li a:hover{
+        transform: none !important;
+    }
+    
+    @keyframes cambiar {
+        0% { margin-top: 0px;}
+        10% { margin-top: 0px;}
+        20% { margin-top: 0px;}
+        50%{margin-top: -70px;}
+        60%{ margin-top: -70px;}
+        70%{ margin-top: -70px;}
+        
+        100%{ margin-top: 0px;}
+    }
+    
+    .logoIndex a{
+        box-shadow: none !important;
+        
+    }
+    .logoIndex .maquina {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        width: 70px;
+        height: 70px;
+        
+    }
+    
+    .logoIndex .joan{
+        display: flex;
+        justify-content: center;
+        width: 70px;
+        height: 70px;
+        
+    }
+    
+    
+
+}
+
+@media (min-width: 600px){
+    
+
+}
+
+
+
+@media (min-width: 1024px){
+    body {
+        background-color: rgb(0, 0, 0);
+    }
+    .grids1{
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 33% 33% 33% ;
+        padding-top: 0px;
+        padding-bottom: 5px ;
+        margin: 1em;
+    }
+    .redesContainer .container-fluid img {
+    display: none;}
+    
+    .bannerInicio p{
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        padding-left: 7em;
+        padding-right: 7em;
+        line-height: 30px; 
+        padding-bottom: 50px;
+      
+   
+        
+    }
+}
+
+ 
+.u-section-1 .u-social-icons-1 {
+    white-space: nowrap;
+    height: 32px;
+    min-height: 16px;
+    width: 188px;
+    min-width: 124px;
+    margin: 23px auto 0 0;
+}
+
+.u-section-1 .u-container-layout-2 {
+    padding: 30px;
+}
+
+.u-section-1 .u-container-layout-1 {
+    padding: 30px 30px 30px 20px;
+}
+
+.u-section-1 .u-container-layout-3 {
+    padding: 30px;
+}
+
+.u-section-1 .u-text-1 {
+    text-transform: none;
+    font-size: 2.25rem;
+    margin: 0;
+}
+
+.u-section-1 .u-text-2 {
+    font-size: 1.5rem;
+    margin: 40px 0 0;
+}
+
+.u-section-1 .u-text-3 {
+    text-transform: none;
+    font-size: 2.25rem;
+    margin: 0;
+}
+
+.u-section-1 .u-text-4 {
+    font-size: 1.25rem;
+    margin: 32px 0 0;
+}
+
+.u-section-1 .u-text-5 {
+    text-transform: none;
+    font-size: 2.25rem;
+    margin: 0;
+}
+
+.u-section-1 .u-sheet-1 {
+    min-height: 570px;
+}
